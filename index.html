@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app"></div>
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <script type="text/babel">
+
+    class App extends React.Component{
+        render(){
+            return (
+                <div>
+                    <Nav />
+                    <Hero />
+                    <MainBody />
+                    <Banner />
+                </div>
+            )
+        }
+    }
+
+        class Nav extends React.Component {
+            render() {
+                return (
+                    <nav>
+                        <ul>
+                            <li>Title</li>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                        </ul>
+                    </nav>
+                );
+            }
+        }
+
+        class Hero extends React.Component {
+            render() {
+                return (
+                    <section className="wrapper-hero">
+                        <div className="hero text">
+                           <h1>BOYS this is a header</h1>
+                        </div>
+                        <div className="hero img">
+                           <img src="./images/image-intro-desktop.jpg" />
+                        </div>
+                    </section>
+                )
+            }
+        }
+
+        
+        class MainBody extends React.Component {
+            render(){
+                return(
+                    <section className="wrapper-body">
+                        <h2>We're ON BOYS</h2>
+                        
+                        <div className="card-wrapper">
+                            <Card />
+                            <Card />
+                            <Card />
+                        </div>
+                        </section>
+                        )
+                    }
+                }
+                
+        class Card extends React.Component{
+            render(){
+                return(
+                    <div className="card">
+                        <div className="card-img">
+                            img
+                        </div>
+                        <div className="card-body">
+                            body
+                        </div>
+                        <div className="card-desc">
+                            desc
+                        </div>
+                    </div>
+                )
+            }
+        }
+
+        class Banner extends React.Component{
+            render(){
+                return(
+                    <section className="wrapper-banner">
+                        <div className="banner">
+                            <h2>WE'RE HIRING BOYS</h2>
+                        </div>    
+                        <a href="#">Find out more!</a>
+                    </section>
+                )
+            }
+        }
+                
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+</body>
+
+</html>
