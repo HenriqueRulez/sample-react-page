@@ -14,7 +14,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, sans-serif;
 }
 
 html {
@@ -31,7 +31,6 @@ ul {
 }
 
 body {
-  background: #faf6ed;
   font-size: 1.6rem;
   color: #222;
   -webkit-font-smoothing: antialiased;
@@ -63,22 +62,37 @@ nav ul {
 
 .wrapper-body {
   background: var(--light-gray);
-  height: 90px;
+  padding: 20px 0px 20px 0px;
 }
 
-h2 {
+.header {
   text-align: center;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .card-wrapper {
   display: flex;
   justify-content: space-around;
-  padding: 20px 0 20px 0;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+}
+
+.wrapper-banner {
+  display: flex;
+  justify-content: center;
+  max-height: 200px;
+  margin-top: 20px;
+}
+
+.banner {
+  color: var(--light-gray);
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: var(--dark-violet);
 }
